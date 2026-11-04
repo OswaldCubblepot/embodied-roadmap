@@ -1,0 +1,13 @@
+# 统一换行符，避免 Windows 上的 CRLF 警告
+* text=auto
+
+# 二进制文件不做换行符转换
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.gif binary
+*.pdf binary
+*.pth binary
+*.pt binary
+*.onnx binary
+*.npy binary
