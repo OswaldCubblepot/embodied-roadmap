@@ -1,0 +1,17 @@
+# 本地开发环境（Windows / CPU）
+# 用途：写代码、读代码、跑小实验、OpenCV 调试。训练交给云端 4090。
+#
+# 安装：
+#   .\.venv\Scripts\Activate.ps1
+#   pip install -r requirements-local.txt
+#
+# 说明：Windows 上 PyPI 的 torch wheel 是 CPU 版（约 200MB），
+# 不需要 --index-url download.pytorch.org/whl/cpu。
+
+numpy
+opencv-python
+torch
+torchvision
+matplotlib
+tqdm
+pillow

@@ -1,0 +1,18 @@
+# 云端环境（Linux / CUDA）
+# 用途：训练、微调、大批量数据处理。
+#
+# ⚠️ 不要直接 pip install torch —— 云端镜像自带的 torch 已与驱动对齐
+#    （实测 2.14.1+cu130 / CUDA 13.0 / cuDNN 92400，见 docs/env-2026-11-04.md）。
+#    重装一次既浪费时间，又可能把能用的环境搞坏。
+#
+# 正确做法：只装非 torch 依赖
+#   source /usr/local/miniconda3/bin/activate py310
+#   pip install -r requirements-cloud.txt
+#
+# 若确实需要重装 torch，先确认架构：RTX 4090 是 sm_89，cu12x/cu13x 均可。
+
+opencv-python-headless
+matplotlib
+scipy
+tqdm
+pillow
